@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 80vh;
+}
+
+body {
+    background-color: #0A192F;
+    padding-top: 0px;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    width: 260%;
+    height: 60px;
+    background-color: #112240;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.buto {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+}
+
+.buto button {
+    display: flex;
+    gap: 10px;
+    height: 25px;
+    width: 100px;
+    position: relative;
+    left: 600px;
+    top: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B6CB0;
+    cursor: pointer;
+    border: 1px solid #64FFDA;
+}
+
+.buto button:hover {
+    background: linear-gradient(#38B2AC, #2C5282);
+    border: solid 1px #64FFDA;
+    transform-origin: 1.0;
+    color: white;
+}
+
+.name {
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.name h1 {
+    display: flex;
+    position: relative;
+    left: 120px;
+    color: #E6F0FF;
+    text-shadow: 0 0 8px #64FFDA;
+}
+
+.name p {
+    display: flex;
+    text-align: justify;
+    position: relative;
+    top: 80px;
+    height: 0px;
+    font-size: 20px;
+    width: 2300px;
+    color: #E6F0FF;
+
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    left: 900px;
+    bottom: 80px;
+}
+
+.pp {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background-color: #2B6CB0;
+    margin-left: 110%;
+    border-radius: 10px;
+    text-align: center;
+    color: #E6F0FF;
+    box-shadow: 0 0 8px #64FFDA;
+}
+
+.p1 {
+   display: block;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    left: 200px;
+    top: 50px;
+
+}
+
+
+
+.p1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    box-shadow: 0 0 8px #366157;
+}
+
+.tx {
+    color: #E6F0FF;
+}
+
+.tx h1 {
+    display: flex;
+    position: relative;
+    left: 439px;
+    bottom: 290px;
+    text-align: center;
+}
+
+.tx p {
+    display: flex;
+    position: relative;
+    left: 439px;
+    bottom: 290px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.componentes h1 {
+    display: block;
+    position: relative;
+    top: 150px;
+    left: 200px;
+    color: #E6F0FF;
+}
+
+.arduino {
+    display: block;
+    color: #E6F0FF;
+}
+
+.arduino h2 {
+    display: block;
+    position: relative;
+    top: 170px;
+    left: 340px;
+}
+
+.arduino p {
+    display: block;
+    position: relative;
+    top: 180px;
+    text-align: justify;
+    font-size: 20px;
+    left: 370px;
+}
+
+.emg {
+    display: block;
+}
+
+.emg h2 {
+    display: block;
+    position: relative;
+    top: 200px;
+    left: 340px;
+    color: #E6F0FF;
+}
+
+.emg p {
+    display: block;
+    position: relative;
+    top: 210px;
+    left: 370px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.dsy {
+    display: block;
+}
+
+.dsy h2 {
+    display: block;
+    position: relative;
+    top: 230px;
+    left: 340px;
+    color: #E6F0FF;
+}
+
+.dsy p {
+    display: block;
+    position: relative;
+    top: 250px;
+    left: 370px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.servo {
+    display: block;
+}
+
+.servo h2 {
+    display: block;
+    position: relative;
+    top: 270px;
+    left: 340px;
+    color: #E6F0FF;
+}
+
+.servo p {
+    display: block;
+    position: relative;
+    top: 290px;
+    left: 370px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.como {
+    display: block;
+    position: relative;
+    top: 150px;
+    color: #E6F0FF;
+}
+
+.opo {
+    display: block;
+}
+
+.opo h2 {
+    display: block;
+    position: relative;
+    top: 310px;
+    left: 370px;
+    text-align: justify;
+    color: #E6F0FF;
+}
+
+.opo p {
+    display: block;
+    position: relative;
+    top: 320px;
+    left: 390px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.cap {
+    display: block;
+}
+
+.cap h2 {
+    display: block;
+    position: relative;
+    top: 330px;
+    left: 370px;
+    text-align: justify;
+    color: #E6F0FF;
+}
+
+.tx2{
+    display: none;
+}
+
+.cap p {
+    display: block;
+    position: relative;
+    top: 340px;
+    left: 390px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.ard {
+    display: block;
+}
+
+.ard h2 {
+    display: block;
+    position: relative;
+    top: 350px;
+    left: 370px;
+    text-align: justify;
+    color: #E6F0FF;
+}
+
+.ard p {
+    display: block;
+    position: relative;
+    top: 360px;
+    left: 390px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.serv {
+    display: block;
+}
+
+.serv h2 {
+    display: block;
+    position: relative;
+    top: 370px;
+    left: 370px;
+    text-align: justify;
+    color: #E6F0FF;
+}
+
+.serv p {
+    display: block;
+    position: relative;
+    top: 380px;
+    left: 390px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.dispy {
+    display: block;
+}
+
+.dispy h2 {
+    display: block;
+    position: relative;
+    top: 390px;
+    left: 370px;
+    text-align: justify;
+    color: #E6F0FF;
+}
+
+.dispy p {
+    display: block;
+    position: relative;
+    top: 400px;
+    left: 390px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.app {
+    display: block;
+}
+
+.app h1 {
+    display: block;
+    position: relative;
+    top: 410px;
+    left: 200px;
+    color: #E6F0FF;
+}
+
+.app li {
+    left: 400px;
+    top: 420px;
+    position: relative;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.ip h1 {
+    display: block;
+    width: 500px;
+    height: 40px;
+    position: relative;
+    left: 200px;
+    top: 440px;
+    color: #E6F0FF;
+}
+
+.ipp p {
+    display: block;
+    position: relative;
+    top: 450px;
+    left: 390px;
+    text-align: justify;
+    font-size: 20px;
+    color: #E6F0FF;
+}
+
+.final{
+    position: relative;
+    top: 480px;
+    width:1520px;
+    height:100px;
+    background-color: #112240
+}
+
+footer{
+    display: block;
+    position: relative;
+    color: #E6F0FF;
+    text-align: center;
+    font-size: 25px;
+    top: 420px;
+    left: 400px;
+}

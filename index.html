@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>KnTeck</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style1.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="buto">
+            <button id="inicio">
+                inicio
+            </button>
+
+            <button id="projetos">
+                projetos
+            </button>
+
+            <button id="sobre">
+                sobre
+            </button>
+
+        </div>
+    </div>
+
+    <div id="inicio">
+        <section id="home">
+            
+            <div class="name">
+                <h1>
+                    KnTeck!
+                </h1>
+                <p>A KnTeck é uma startup focada no desenvolvimento de próteses robóticas de baixo custo, unindo
+                    tecnologia,
+                    acessibilidade e impacto social. O objetivo é devolver autonomia às pessoas por meio de próteses
+                    inteligentes e acessíveis, produzidas com impressão 3D e sensores musculares. A empresa busca um
+                    futuro
+                    em que a tecnologia assistiva seja um direito de todos, e não um luxo.</p>
+            </div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+        </section>
+    </div>
+
+
+    <div id="projetos">
+        <section id="projetos-section"> 
+        <div class="pp">
+            <h1>
+                PROJETOS
+            </h1>
+        </div>
+
+        <div class="p1">
+           
+            <img src="assets/projeto.jpeg" alt="">
+            <div class="tx">
+                <h1>Sistema de Controle Muscular com Arduino Nano</h1>
+                <p>
+                    Este projeto tem como objetivo interpretar sinais elétricos gerados pelos músculos humanos (EMG)
+                    para controlar atuadores robóticos, como servomotores. Ele funciona como uma interface biológica que
+                    transforma a atividade muscular em movimentos mecânicos, sendo ideal para aplicações em próteses
+                    robóticas ou sistemas de reabilitação.
+                </p>
+            </div>
+        </div>
+
+        <div class="componentes">
+            <h1>⚙️ Componentes Principais</h1>
+
+            <div class="arduino">
+                <h2>1. Arduino Nano</h2>
+                <p>
+                    É o microcontrolador responsável por processar os sinais captados e enviar comandos aos servos. Ele
+                    recebe o sinal do sensor EMG, faz o tratamento digital (como filtragem e limiar de detecção) e
+                    decide quando acionar os motores.
+                </p>
+            </div>
+            <div class="emg">
+                <h2>2. Módulo Sensor EMG (CJMCU-8322)</h2>
+                <p>Este sensor mede a atividade elétrica gerada pelos músculos durante a contração.
+                    Ele amplifica e filtra o sinal do músculo.
+                    O sinal analógico resultante é enviado para o pino A0 do Arduino Nano.
+                    Quando o músculo se contrai, o sensor gera uma variação de tensão proporcional à intensidade da
+                    contração.</p>
+            </div>
+            <div class="dsy">
+                <h2>3. Display OLED (0.96") </h2>
+                <p>
+                    O pequeno display serve para mostrar informações em tempo real, como:
+                    Nível do sinal muscular (EMG);
+                    Estado dos servos (ligado/desligado);
+                    Gráficos ou barras de força muscular.
+                </p>
+            </div>
+            <div class="servo">
+                <h2>4. Servomotores SG90</h2>
+                <p>
+                    Os servos são os atuadores que realizam o movimento físico. Com base nos comandos do Arduino,
+                    eles se movem para posições específicas, simulando o movimento de uma prótese ou outro dispositivo
+                    controlado pelos músculos.
+                </p>
+            </div>
+
+            <div class="como">
+                <h1>🔌 Como Funciona</h1>
+            </div>
+
+            <div class="opo">
+                <h2>Captação do sinal:</h2>
+                <p>
+                    O sensor EMG é conectado a eletrodos colocados sobre o músculo. Quando o músculo é contraído,
+                    pequenas diferenças de potencial elétrico são geradas.
+                </p>
+            </div>
+            <div class="cap">
+                <h2>Amplificação e filtragem:</h2>
+                <p>
+                    O módulo CJMCU-8322 amplifica e limpa o sinal, transformando-o em uma forma legível para o Arduino.
+                </p>
+            </div>
+            <div class="ard">
+                <h2>Processamento no Arduino:</h2>
+                <p>
+                    O Arduino lê o valor analógico do sensor e aplica um limiar (threshold) para detectar quando há uma
+                    contração muscular significativa.
+                </p>
+            </div>
+            <div class="serv">
+                <h2>Ação nos servos:</h2>
+                <p>Quando o valor ultrapassa o limiar, o Arduino envia um sinal de controle para mover o(s)
+                    servomotor(es), simulando um movimento físico (como abrir ou fechar uma mão robótica).
+                </p>
+            </div>
+            <div class="dispy">
+                <h2>Exibição no display:</h2>
+                <p>O display OLED mostra o valor do sinal EMG em tempo real e o estado atual dos motores.</p>
+            </div>
+            <div class="app">
+                <h1>🧠 Aplicações Possíveis:</h1>
+                <li>Controle de próteses robóticas de baixo custo;</li>
+                <li>Sistemas de treinamento muscular e reabilitação;</li>
+                <li>Interfaces homem-máquina (HMI) baseadas em movimento muscular;</li>
+                <li>Projetos educacionais sobre biomecatrônica e robótica assistiva.</li>
+            </div>
+        </div>
+        </section>
+    </div>
+        <div id="sobre">
+            <section id="sobre-section">
+                <div class="ip">
+                    <h1>💡 Motivo da Criação da Startup:</h1>
+                </div>
+                <div class="ipp">
+                    <p>
+                        A startup nasceu com o propósito de tornar a tecnologia acessível às pessoas que mais precisam
+                        dela.
+                        Percebemos que, apesar dos grandes avanços na área da robótica e da biomecatrônica, as próteses
+                        robóticas disponíveis no mercado ainda são caras e inacessíveis para a maioria das pessoas que
+                        perderam um membro ou têm limitações motoras.
+
+                        Nosso objetivo é democratizar o acesso às próteses inteligentes, desenvolvendo soluções de baixo
+                        custo, eficientes e personalizáveis, utilizando componentes eletrônicos acessíveis, impressão 3D
+                        e
+                        software livre.
+
+                        A motivação central vem do desejo de unir tecnologia e empatia, criando dispositivos que
+                        restauram
+                        não apenas movimentos, mas também a autoestima e a independência de quem os utiliza.
+                        Cada avanço do projeto é guiado por uma visão humana: transformar sinais biológicos simples —
+                        como a
+                        atividade elétrica dos músculos — em movimentos funcionais e naturais.
+
+                        Assim, nossa startup surgiu para mostrar que a robótica pode ser inclusiva, e que a inovação
+                        verdadeira acontece quando a tecnologia serve à vida humana.
+                    </p>
+                </div>
+                
+            </section>
+        </div>
+        <div class="final"></div>
+        <footer>
+            <p>Projeto protese Roboticas. Kennedy</p>
+        </footer>
+
+</body>
+<script src="scripts/main.js"></script>
+
+</html>

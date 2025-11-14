@@ -1,0 +1,173 @@
+/* ==== Responsividade para telas pequenas (até 400px) ==== */
+@media (max-width: 360px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: rgba(17, 34, 64, 0.8);
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+    }
+
+    .buto {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .buto button {
+        display: flex;
+        gap: 10px;
+        height: 25px;
+        width: 100px;
+        position: relative;
+        left: 20px;
+        top: 15px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: #2B6CB0;
+        cursor: pointer;
+        border: 1px solid #64FFDA;
+    }
+
+    .buto button:hover {
+        background: linear-gradient(#38B2AC, #2C5282);
+        border: solid 1px #64FFDA;
+        transform-origin: 1.0;
+        color: white;
+    }
+
+
+    .name {
+        display: flex;
+        position: relative;
+        top: 70px;
+        left: -100px;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .name h1 {
+        display: flex;
+        position: relative;
+        color: #E6F0FF;
+        text-shadow: 0 0 8px #64FFDA;
+    }
+
+    .name p {
+
+        display: flex;
+        text-align: justify;
+        position: relative;
+        top: 50px;
+        height: 100px;
+        font-size: 13px;
+        width: 800px;
+        color: #E6F0FF;
+
+    }
+
+    .pp {
+        display: flex;
+        position: relative;
+        right: 200px;
+        top: 200px;
+        height: 30px;
+        width: 120px;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .pp h1 {
+        padding: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .p1 {
+        display: block;
+        position: relative;
+        height: 200px;
+        width: 250px;
+        left: 50px;
+        top: 270px;
+
+    }
+
+    .p1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        box-shadow: 0 0 8px #366157;
+    }
+
+
+    .tx h1 {
+        position: relative;
+        left: 0px;
+        top: -270px;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    .tx p{
+     display: flex;
+     position: relative;
+     font-size: 15px;
+     left: 0px;
+     bottom: 40px;
+     
+    }
+
+
+
+
+    
+    .logo,
+    .componentes,
+    .arduino,
+    .emg,
+    .dsy,
+    .servo,
+    .como,
+    .opo,
+    .cap,
+    .ard,
+    .serv,
+    .dispy,
+    .app,
+    .ip,
+    .ipp,
+    .final {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    /* Remove largura forçada e centraliza conteúdo restante */
+    * {
+        width: auto;
+    }
+
+    body {
+        background-color: #0A192F;
+    }
+}
