@@ -1,5 +1,5 @@
 /* ==== Responsividade para telas pequenas (até 400px) ==== */
-@media (max-width: 400px) {
+@media (max-width: 720px) {
 
     * {
         margin: 0;
@@ -172,3 +172,4 @@
     }
 
 }
+
