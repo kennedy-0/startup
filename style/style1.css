@@ -1,6 +1,5 @@
-/* ==== Responsividade para telas pequenas (até 400px) ==== */
-@media (max-width: 500px) {
-
+@media screen and (max-width: 720px) and (orientation: portrait) {
+         
     * {
         margin: 0;
         padding: 0;
@@ -171,3 +170,4 @@
         background-color: #0A192F;
     }
 }
+
