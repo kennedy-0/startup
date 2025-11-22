@@ -1,8 +1,12 @@
-@media (max-width:920px) {
-    main.container {
-        grid-template-columns: 1fr
+
+/* ==== Responsividade para telas pequenas (até 400px) ==== */
+@media (max-width: 1000px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-}
 
     .menu {
         position: fixed;
@@ -168,6 +172,3 @@
         background-color: #0A192F;
     }
 }
-
-
-
