@@ -1,5 +1,5 @@
 /* ==== Responsividade para telas pequenas (até 400px) ==== */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 
     * {
         margin: 0;
@@ -171,4 +171,5 @@
         background-color: #0A192F;
     }
 }
+
 
